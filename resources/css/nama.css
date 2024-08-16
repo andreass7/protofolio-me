@@ -1,0 +1,22 @@
+.nama span {
+    display: inline-block;
+    transition: 0.5s ease-out;
+    transform-origin: center bottom;
+    animation: waveEffect 1s ease-in-out infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes waveEffect {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-3px);
+        color: gray;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
